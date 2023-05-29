@@ -1,2 +1,0 @@
-Hola mundo desde el curso de python
-Hola mundo
