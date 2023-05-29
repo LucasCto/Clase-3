@@ -40,3 +40,37 @@ def eliminar_patente():
                 escritor_csv.writerow(fila)
     else:
         print(f"El valor {buscador} no fue encontrado en el arreglo.")
+
+def nuevo_archivo_provincia():
+    provincia = input("Ingrese la provincia: ")
+    matriz = np.asarray(data)
+    matriz_provincia = np.any(matriz[provincia])
+    with open(f'{provincia}.csv', 'w') as f:
+        f.write(matriz_provincia)
+
+
+data = pd.read_csv('patentes.csv')
+while True:
+    print("-----Menu------")
+    print(" a-Mostrar patentes "
+          "\n b-Buscador "
+          "\n c-Ingresar nuevo registro"
+          "\n d-Generar nuevo archivo por provincia"
+          "\n e-Eliminar un registro"
+          "\n f-Salir")
+    menu = input("Ingrese la opción a realizar: ")
+    if menu == "a":
+        print(data)
+    elif menu == "b":
+        buscador_por_patente(data)
+    elif menu == "c":
+        nuevo_ingreso()
+    elif menu == "d:":
+        nuevo_archivo_provincia()
+    elif menu == "e":
+        eliminar_patente()
+    elif menu == "f":
+        print("Hasta luego!")
+        break
+    else:
+        print("Error, intente nuevamente")
