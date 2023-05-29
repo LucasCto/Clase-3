@@ -1,0 +1,10 @@
+{
+  "nombre": "Juan",
+  "edad": 25,
+  "direccion": {
+    "calle": "Av. Siempre Viva",
+    "codigoPostal": "12345"
+  }
+}
+
+center
