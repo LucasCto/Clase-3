@@ -1,9 +1,3 @@
-#Contexto para usar el archivo csv: para poder encontrar si fuera un policia y quiero hacer una multa
-#donde esta radicado el vehiculo y tambien quien es el dueño
-#tambien sirve para buscar por patentes en caso de solo tener la patente del vehiculo
-#y otra utilidad es la de añadir nuevas patentes en caso de que esta no hayan sido añadidas al sistema
-#tambien si el dueño no es el correcto poder modificar dicho dato
-#que me haga un archivo nuevo con todas la informacion, ingresando una provinicia
 import numpy as np
 import pandas as pd
 import csv
